@@ -1,0 +1,34 @@
+E test_demo.py::test_sum
+ file D:\P_workspace\project1\unit\test_demo.py, line 23
+   def test_sum(self):
+ E       fixture 'self' not found
+ >       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+ >       use 'pytest --fixtures [testpath]' for help on them.
+ 
+ D:\P_workspace\project1\unit\test_demo.py:23
+E test_demo.py::test_dem
+ file D:\P_workspace\project1\unit\test_demo.py, line 30
+   def test_dem(self):
+ E       fixture 'self' not found
+ >       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+ >       use 'pytest --fixtures [testpath]' for help on them.
+ 
+ D:\P_workspace\project1\unit\test_demo.py:30
+F test_pytest.py::test_answer
+ def test_answer():
+ >       assert inc(3) == 5
+ E       assert 4 == 5
+ E        +  where 4 = inc(3)
+ 
+ test_pytest.py:4: AssertionError
+. test_pytest.py::TestClass::test_one
+F test_pytest.py::TestClass::test_two
+ self = <unit.test_pytest.TestClass object at 0x0000029AF25E38C8>
+ 
+     def test_two(self):
+         x = "hello"
+ >       assert hasattr(x, "check")
+ E       AssertionError: assert False
+ E        +  where False = hasattr('hello', 'check')
+ 
+ test_pytest.py:15: AssertionError
